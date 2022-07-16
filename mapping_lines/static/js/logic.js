@@ -2,7 +2,7 @@
 console.log("working");
 
 // Create the map object with center at the San Francisco airport.
-let map = L.map('mapid').setView([37.6213, -122.3790], 5);
+let map = L.map('mapid').setView([37.6213, -100], 5);
 
 // // Coordinates for each point to be used in the polyline.
 // let line = [
@@ -10,21 +10,24 @@ let map = L.map('mapid').setView([37.6213, -122.3790], 5);
 //     [37.6213, -122.3790],
 //     [40.7899, -111.9791],
 //     [47.4502, -122.3088]
-//   ];
+// ];
 
 // Coordinates for each point to be used in the polyline.
 let line = [
-    [37.61889, -122.375],
-    [30.1974292, --97.6663058],
-    [43.676666, -79.630554],
-    [40.63972, -73.77889]
-  ];
-
+    [37.6188, -122.3750],
+    [38.6955, -121.5908],
+    [30.1974, -97.6663],
+    [43.6766, -79.6305],
+    [40.6397, -73.7788]
+];
 
 // Create a polyline using the line coordinates and make the line yellow.
 L.polyline(line, {
-    color: "yellow"
- }).addTo(map);
+  strokeColor: "blue",
+  strokeThickness: "4",
+  strokeDashArray: "[4, 4]",
+  strokeOpacity: "0.5"
+}).addTo(map);
 
 // We create the tile layer that will be the background of our map.
 let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
