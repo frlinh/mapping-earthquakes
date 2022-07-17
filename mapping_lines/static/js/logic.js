@@ -23,10 +23,10 @@ let line = [
 
 // Create a polyline using the line coordinates and make the line yellow.
 L.polyline(line, {
-  strokeColor: "blue",
-  strokeThickness: "4",
-  strokeDashArray: "[4, 4]",
-  strokeOpacity: "0.5"
+  color: "blue",
+  weight: "4",
+  dashArray: "[4, 4]",
+  opacity: "0.5"
 }).addTo(map);
 
 // We create the tile layer that will be the background of our map.
