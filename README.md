@@ -1,7 +1,7 @@
 # Interactive Earthquake Map
 
 ## Project Overview
-Created an interactive earthquake map with streets, satellite, and navigation views and map overlays of earthquakes from the last seven days, tectonic plates, and major earthquakes over 4.5 magnitude.
+Create an interactive earthquake map with streets, satellite, and navigation views and map overlays of earthquakes from the last seven days, tectonic plates, and major earthquakes over 4.5 magnitude.
 
 ## Resources
 - Data Source: [Earthquakes GeoJSON](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson), [Earthquakes above 4.5mag GeoJSON](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson), [Tectonic Plate GeoJSON](https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json)
